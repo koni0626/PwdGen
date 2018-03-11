@@ -1,0 +1,14 @@
+D:\visualstdio\PwdGen\PwdGen\bin\Release\PwdGen.exe.config
+D:\visualstdio\PwdGen\PwdGen\bin\Release\PwdGen.exe
+D:\visualstdio\PwdGen\PwdGen\bin\Release\PwdGen.pdb
+D:\visualstdio\PwdGen\PwdGen\obj\Release\MainWindow.g.cs
+D:\visualstdio\PwdGen\PwdGen\obj\Release\App.g.cs
+D:\visualstdio\PwdGen\PwdGen\obj\Release\PwdGen_MarkupCompile.cache
+D:\visualstdio\PwdGen\PwdGen\obj\Release\PwdGen_MarkupCompile.lref
+D:\visualstdio\PwdGen\PwdGen\obj\Release\MainWindow.baml
+D:\visualstdio\PwdGen\PwdGen\obj\Release\PwdGen.g.resources
+D:\visualstdio\PwdGen\PwdGen\obj\Release\PwdGen.Properties.Resources.resources
+D:\visualstdio\PwdGen\PwdGen\obj\Release\PwdGen.csproj.GenerateResource.Cache
+D:\visualstdio\PwdGen\PwdGen\obj\Release\PwdGen.csproj.CoreCompileInputs.cache
+D:\visualstdio\PwdGen\PwdGen\obj\Release\PwdGen.exe
+D:\visualstdio\PwdGen\PwdGen\obj\Release\PwdGen.pdb

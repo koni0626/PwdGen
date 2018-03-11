@@ -100,11 +100,5 @@
   <ItemGroup>
     <Resource Include="icon.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="clip.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="createbutton.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
