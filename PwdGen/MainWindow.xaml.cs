@@ -27,7 +27,7 @@ namespace PwdGen
         public const string PWDTYPE3 = "アルファベットだけ";
         public const int PWDTYPE_DEFAULT_TYPE_INDEX = 0;
         public const int PWDLEN_MIN = 6;
-        public const int PWDLEN_MAX = 32;
+        public const int PWDLEN_MAX = 256;
         public const int PWDLEN_DEFAULT = 20;
         public MainWindow()
         {
@@ -69,15 +69,22 @@ namespace PwdGen
         private string CreateNewPasswd(string OldPasswd,int PwdType,int PwdLen)
         {
             string strNewPasswd;
+            byte[] hash256Value = null;
+            byte[] AllValue = new byte[32 * 8];
+ 
             // パスワードをUTF-8エンコードでバイト配列として取り出す
             byte[] byteValues = Encoding.UTF8.GetBytes(OldPasswd);
 
             // SHA256のハッシュ値を計算する
             SHA256 crypto256 = new SHA256CryptoServiceProvider();
-            byte[] hash256Value = crypto256.ComputeHash(byteValues);
+            for (int i = 0; i < 256 / 32; i++)
+            {
+                hash256Value = crypto256.ComputeHash(byteValues);
+                byteValues = hash256Value;
+                byteValues.CopyTo(AllValue, 32 * i);
+            }
             /* ハッシュ値を変換する */
-
-            strNewPasswd = PasswdGen(hash256Value,PwdType,PwdLen);
+            strNewPasswd = PasswdGen(AllValue, PwdType,PwdLen);
             return strNewPasswd;
         }
 
@@ -116,6 +123,12 @@ namespace PwdGen
 
         private void CopyButton_Click(object sender, RoutedEventArgs e)
         {
+            if (NewPwdTextBox.Text.Length == 0)
+            {
+                MessageBox.Show("パスワードは1文字以上指定してください");
+                return;
+            }
+
             Clipboard.SetData(DataFormats.Text, (Object)NewPwdTextBox.Text);
             MessageBox.Show("クリップボードにパスワードを送りました");
         }

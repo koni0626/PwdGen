@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwdGen", "PwdGen\PwdGen.csproj", "{2EE6456D-7271-41AB-B827-FA90FB4FF287}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PwdGenSetup", "PwdGenSetup\PwdGenSetup.vdproj", "{D7D98421-772B-44F3-8EC4-07FDF1CBF533}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{2EE6456D-7271-41AB-B827-FA90FB4FF287}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EE6456D-7271-41AB-B827-FA90FB4FF287}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EE6456D-7271-41AB-B827-FA90FB4FF287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D98421-772B-44F3-8EC4-07FDF1CBF533}.Debug|Any CPU.ActiveCfg = Debug
+		{D7D98421-772B-44F3-8EC4-07FDF1CBF533}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

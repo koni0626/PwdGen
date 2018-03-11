@@ -5,19 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PwdGen"
         mc:Ignorable="d"
-        Title="パスワード強化ツール" Height="264.4" Width="389.8">
+        Title="パスワード強化ツール" Height="295.047" Width="404.467" WindowStyle="ToolWindow" Background="Black" Foreground="Black" ResizeMode="NoResize">
     <Grid>
-        <Label Content="パスワードを生成するためのキーワード「Google」など)" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="273"/>
-        <TextBox Name="NormalPwdTextBox" HorizontalAlignment="Left" Height="22" Margin="10,31,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="354"/>
-        <Label Content="パスワードに使用する文字" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="146"/>
-        <ComboBox Name="ComboBoxPwdType" HorizontalAlignment="Left" Height="21" Margin="11,95,0,0" VerticalAlignment="Top" Width="145"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="パスワードを生成するためのキーワード「Google」など)" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top" Width="273" Foreground="White" Height="26"/>
+        <TextBox Name="NormalPwdTextBox" HorizontalAlignment="Left" Height="22" Margin="10,31,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="368"/>
+        <Label Content="パスワードに使用する文字" HorizontalAlignment="Left" Margin="23,184,0,0" VerticalAlignment="Top" Width="146" Foreground="White" Height="25"/>
+        <ComboBox Name="ComboBoxPwdType" HorizontalAlignment="Left" Height="21" Margin="24,212,0,0" VerticalAlignment="Top" Width="145"
          />
-        <Label Content="作成するパスワードの長さ" HorizontalAlignment="Left" Margin="197,69,0,0" VerticalAlignment="Top" Width="146"/>
-        <ComboBox Name="ComboBoxPwdLen" HorizontalAlignment="Left" Height="21" Margin="198,95,0,0" VerticalAlignment="Top" Width="145"/>
-        <Label Content="新しいパスワード" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="146"/>
-        <TextBox Name="NewPwdTextBox" HorizontalAlignment="Left" Height="23" Margin="10,186,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="273"/>
-        <Button Content="パスワード作成" HorizontalAlignment="Left" Height="35" Margin="134,134,0,0" VerticalAlignment="Top" Width="91" Click="GenButton_Click"/>
-        <Button Content="コピーする" HorizontalAlignment="Left" Height="23" Margin="292,186,0,0" VerticalAlignment="Top" Width="72" Click="CopyButton_Click"/>
+        <Label Content="作成するパスワードの長さ" HorizontalAlignment="Left" Margin="210,186,0,0" VerticalAlignment="Top" Width="146" Foreground="White" Height="26"/>
+        <ComboBox Name="ComboBoxPwdLen" HorizontalAlignment="Left" Height="21" Margin="211,212,0,0" VerticalAlignment="Top" Width="145"/>
+        <Label Content="新しいパスワード" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="146" Foreground="White" Height="26"/>
+        <TextBox Name="NewPwdTextBox" HorizontalAlignment="Left" Height="24" Margin="10,84,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="368"/>
+        <Button Content="作成" HorizontalAlignment="Left" Height="29" Margin="84,120,0,0" VerticalAlignment="Top" Width="91" Click="GenButton_Click" BorderBrush="White" Background="#FF020202" Foreground="White"/>
+        <Button  Content="コピー" HorizontalAlignment="Left" Height="29" Margin="211,120,0,0" VerticalAlignment="Top" Width="90" Click="CopyButton_Click" BorderBrush="White" Foreground="White" Background="Black"/>
+        <Border BorderBrush="#FFF9F9F9" BorderThickness="1" HorizontalAlignment="Left" Height="76" Margin="11,174,0,0" VerticalAlignment="Top" Width="367"/>
+        <Label Content="詳細設定" HorizontalAlignment="Left" Height="24" Margin="13,153,0,0" VerticalAlignment="Top" Width="125" Foreground="White"/>
 
     </Grid>
 </Window>
